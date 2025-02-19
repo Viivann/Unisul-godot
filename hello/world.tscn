@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvbmorvqrriuy"]
+
+[ext_resource type="Texture2D" uid="uid://c73l8op1wvhy1" path="res://walking_assets/assets/background.png" id="1_xues5"]
+[ext_resource type="PackedScene" uid="uid://8c38lpubcf7b" path="res://box.tscn" id="2_16tj6"]
+[ext_resource type="PackedScene" uid="uid://cir0kywce57xb" path="res://player.tscn" id="3_wyyv5"]
+[ext_resource type="PackedScene" uid="uid://bunwn558pfgl8" path="res://ground.tscn" id="4_8an5w"]
+
+[node name="world" type="Node2D"]
+
+[node name="ground" parent="." instance=ExtResource("4_8an5w")]
+position = Vector2(666, 558)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1315.0
+offset_bottom = 721.0
+texture = ExtResource("1_xues5")
+
+[node name="Player" parent="." instance=ExtResource("3_wyyv5")]
+position = Vector2(73, 105)
+
+[node name="box" parent="." instance=ExtResource("2_16tj6")]
+position = Vector2(406, 428)
+
+[node name="box2" parent="." instance=ExtResource("2_16tj6")]
+position = Vector2(535, 352)
+
+[node name="box3" parent="." instance=ExtResource("2_16tj6")]
+position = Vector2(688, 305)
+
+[node name="box4" parent="." instance=ExtResource("2_16tj6")]
+position = Vector2(794, 195)
+
+[node name="box5" parent="." instance=ExtResource("2_16tj6")]
+position = Vector2(891, 194)
+
+[node name="box6" parent="." instance=ExtResource("2_16tj6")]
+position = Vector2(977, 194)
